@@ -58,6 +58,10 @@ body{
     color: #fff;
     font-family: cursive;
 }
+nav img{
+    height: 1rem;
+    width: 1rem;
+}
 .aboutme{
     height: 20rem;
     margin-top:5rem;
