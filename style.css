@@ -72,14 +72,10 @@ nav img{
     flex-direction: row;
     align-items: flex-start;
 }
-.image1{
-    height:5rem;
-    width:5rem;
-    margin-right: 3rem;
-}
 .image1 img{
     height:5rem;
     width:5rem;
+    margin-right: 3rem;
 }
 .name{
     font-size: large;
