@@ -175,6 +175,75 @@ button:hover{
     color: #fff;
 
 }
+@media screen and (max-width: 767px) {
+    body {
+        overflow: auto;
+    }
+    
+    .aboutme {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        margin-top: 3rem;
+    }
+
+    .image1 {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+
+    .profiles {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 3rem;
+    }
+
+    .profile {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .pg img {
+        margin-right: 0;
+    }
+
+    .plink button {
+        margin-top: 1rem;
+    }
+}
+
+/* Tablet Styles */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .aboutme {
+        margin-top: 4rem;
+    }
+}
 .profiles::-webkit-scrollbar {
     display: none;
+}
+@media screen and (max-width: 767px) {
+    .social-media-buttons {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .social-media-buttons li {
+        margin-bottom: 1rem;
+    }
+
+    .f1 {
+        text-align: center;
+    }
+}
+
+/* Tablet Styles */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .social-media-buttons {
+        justify-content: space-between;
+    }
+
+    .f1 {
+        text-align: left;
+    }
 }
