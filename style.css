@@ -186,6 +186,8 @@ button:hover{
         margin-left: 1rem;
         margin-right: 1rem;
         margin-top: 3rem;
+        margin-bottom: 3rem;
+        height:30rem;
     }
 
     .image1 {
@@ -195,13 +197,14 @@ button:hover{
 
     .profiles {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
+        flex-wrap: wrap;
         margin-top: 2rem;
         overflow:auto;
     }
 
     .profile {
-        width: 100%;
+        width: 50%;
         margin-bottom: 1rem;
     }
 
@@ -211,6 +214,9 @@ button:hover{
 
     .plink button {
         margin-top: 1rem;
+    }
+    .profiles::-webkit-scrollbar {
+        display: none;
     }
 }
 
