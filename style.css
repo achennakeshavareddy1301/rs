@@ -195,8 +195,9 @@ button:hover{
 
     .profiles {
         flex-direction: column;
-        align-items: center;
-        margin-top: 3rem;
+        align-items: flex-start;
+        margin-top: 2rem;
+        overflow:auto;
     }
 
     .profile {
