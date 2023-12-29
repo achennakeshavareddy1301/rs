@@ -1,0 +1,176 @@
+body{
+    margin:0px;
+    background-color:#232323;
+    flex-wrap: wrap;
+    display: block;
+}  
+.background {
+    background-color:black;
+    display: grid;
+    place-items: center;
+    height: 10rem;
+} 
+.social-media-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    list-style: none;
+    
+} 
+.social-media-buttons li {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    cursor: pointer;
+    display: grid;
+    background-color: grey;
+    place-items: center;
+    transition: all 0.3s;
+    border: 1px solid grey;
+}  
+.social-media-buttons li a {
+    display: grid;
+    place-items: center;
+    width: 100%;
+    height: 100%;
+    color: blue;
+}  
+.social-media-buttons li:hover {
+    background-color: black;
+    border: 1px solid #fff;
+    border-radius: 8px;
+}
+.social-media-buttons li a svg {
+    height: 24px;
+    width: 24px;
+    stroke: black;
+    stroke-width: 1.75;
+    transition: 0.8s;
+}
+.social-media-buttons li:hover svg {
+    stroke: blue;
+    transform: rotateY(360deg);
+    stroke-width: 1.75;
+}
+.f1 p{
+    font-weight: 300;
+    color: #fff;
+    font-family: cursive;
+}
+.aboutme{
+    height: 20rem;
+    margin-top:5rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    padding:4rem;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+.image1{
+    height:12rem;
+    width:12rem;
+    margin-right: 3rem;
+}
+.name{
+    font-size: large;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: 650; 
+    color: #fff;
+}
+.a{
+    display: flex;
+    flex-direction: column;
+}
+.about{
+    flex-wrap: wrap;
+    color: #fff;
+    font-weight: 300;
+}
+.skills p{
+    font-weight: 500;
+    font-family: monospace;
+    color: #fff;
+}
+.skills li{
+    font-weight: 500;
+    font-family: monospace;
+    color: #fff;
+}
+.profiles{
+    height: 15rem;
+    display:flex;
+    flex-direction: row;
+    padding: 1rem;
+    margin-top:6rem;
+    flex-wrap: wrap;
+    overflow:auto;
+}
+.p{
+    margin:1rem;
+}
+.plink p{
+    font-weight:700;
+    color: #fff;
+    font-family: cursive;
+    margin-top: 2rem;
+
+}
+.profile{
+    height:13rem;
+    width: 18rem;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 2rem;
+    background-color:rgba(107, 105, 105, 0.4);
+    margin-right: 1rem;
+    margin-top: 1rem;
+    box-shadow: 2px 2px 8px;
+    border-radius: 1rem;
+}
+.profile:hover{
+    box-shadow: 4px 4px 12px whitesmoke;
+
+}
+
+.pg img{
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+.plink button{
+    margin-top: 2rem;
+}
+.pro1:hover{
+    box-shadow:4px 4px 12px whitesmoke;
+}
+.ab1 img{
+    height:5rem;
+    width: 5rem;
+    margin-right:1rem;
+    border-radius: 50%;
+}
+
+.plink p{
+    font-weight: 650;
+    color: #fff;
+}
+button{
+    background-color: rgb(246, 246, 247);
+    border-radius: 0.3rem;
+}
+button:hover{
+    background-color: antiquewhite;
+}
+.but1 p{
+    font-weight: 650;
+    font-family: cursive;
+    color: #fff;
+
+}
+.profiles::-webkit-scrollbar {
+    display: none;
+}
