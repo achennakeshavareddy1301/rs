@@ -73,6 +73,10 @@ body{
     width:5rem;
     margin-right: 3rem;
 }
+.image1 img{
+    height:5rem;
+    width:5rem;
+}
 .name{
     font-size: large;
     font-family:Georgia, 'Times New Roman', Times, serif;
