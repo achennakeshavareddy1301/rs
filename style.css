@@ -131,11 +131,12 @@ nav img{
     background-color:rgba(107, 105, 105, 0.4);
     margin-right: 1rem;
     margin-top: 1rem;
-    box-shadow: 2px 2px 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
     border-radius: 1rem;
 }
 .profile:hover{
-    box-shadow: 4px 4px 12px whitesmoke;
+    transform: scale(1.05);
 
 }
 
