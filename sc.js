@@ -10,3 +10,6 @@ function visitpage3(){
 function visitpage4(){
     window.location='https://achennakeshavareddy1301.github.io/spotify/';
 }
+function visitpage5(){
+    window.location='https://achennakeshavareddy1301.github.io/simon-game/';
+}
