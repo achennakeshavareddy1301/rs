@@ -125,30 +125,26 @@ h4 {
     .aboutme{
         display:flex;
         flex-direction:column;
+        align-items:flex-start;
     }
     .profiles {
-        width: auto; /* Change width to auto for responsiveness */
+        width: auto; 
         margin-right: 2rem;
         margin-left: 2rem;
         display: flex;
         flex-direction: column;
-        align-items: center; /* Center align items */
     }
 
     .profile {
         width: 80%;
-        height: auto; /* Change height to auto for responsiveness */
+        height: auto; 
         margin-left: 0; /* Remove left margin */
         margin-right: 0; /* Remove right margin */
         margin-bottom: 1rem; /* Add bottom margin for spacing */
         margin-top: 1rem; /* Add top margin for spacing */
     }
 
-    h4 {
-        margin-right: 2rem;
-        margin-left: 2rem;
-        text-align: center; /* Center align text */
-    }
+
 
     .pg img {
         width: 6rem; /* Keep the image size */
