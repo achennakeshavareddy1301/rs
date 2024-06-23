@@ -41,24 +41,26 @@ body{
 .skills p{
     color: #fff;
     font-weight:500;
-
 }
 .f{
     border-radius: 50%;
     height: 3rem;
     width: 3rem;
 }
+.profiles{
+    width:70rem;
+    height:15rem;
 .profiles {
     width: 70rem;
     height: 15rem;
     margin-top: 1rem;
     margin-bottom: 5rem;
     margin-left: 14rem;
-    margin-right: 14rem;
-    display: flex;
+@@ -59,17 +59,19 @@ body{
     flex-direction: row;
     align-items: flex-start;
 }
+h4{
 
 h4 {
     color: #fff;
@@ -66,43 +68,44 @@ h4 {
     margin-left: 14rem;
     margin-right: 14rem;
 }
+.profile{
+    background-color:rgba(0, 0, 0, 0.568);
 
 .profile {
     background-color: rgba(0, 0, 0, 0.568);
     box-sizing: border-box;
+    border-style:hidden;
+    width:15rem;
     border-style: hidden;
     width: 15rem;
     height: 15rem;
     border-radius: 0.5rem;
     padding: 1rem;
-    margin-left: 1rem;
-    margin-top: 1rem;
-    display: flex;
-    flex-direction: column;
+@@ -80,7 +82,8 @@ h4{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: transform 0.3s;
 }
+.pg img{
 
 .pg img {
     width: 6rem;
     height: 6rem;
     justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    margin-left: 1rem;
+@@ -90,7 +93,8 @@ h4{
     margin-right: 1rem;
     margin-bottom: 0.5rem;
 }
+.plink p{
 
 .plink p {
     font-weight: 600;
     color: #fff;
     justify-content: center;
-    align-items: center;
-    margin-left: 1rem;
+@@ -99,50 +103,62 @@ h4{
     margin-right: 1rem;
     margin-bottom: 1rem;
 }
+.plink button{
 
 .plink button {
     width: 100%;
@@ -110,12 +113,18 @@ h4 {
     align-items: center;
     border-radius: 5px;
     transition: transform 0.3s;
+
 }
+.plink button:hover{
 
 .plink button:hover {
     background-color: rgb(189, 214, 214);
     transform: scale(1.10);
+
+
 }
+.profile:hover{
+    transform: scale(1.05);
 
 .profile:hover {
     transform: scale(1.05);
@@ -123,28 +132,49 @@ h4 {
 
 @media only screen and (max-width: 767px) {
     .aboutme{
-        display:flex;
-        flex-direction:column;
-        align-items:flex-start;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height:30rem;
+        margin-right:2rem;
+        margin-left:2rem;
     }
+}
+@media only screen and (max-width: 767px) {
+    .profiles{
+        width: 100%;
+        margin-right:2rem;
+        margin-left:2rem;
     .profiles {
-        width: auto; 
+        width: auto; /* Change width to auto for responsiveness */
         margin-right: 2rem;
         margin-left: 2rem;
         display: flex;
         flex-direction: column;
+        align-items: center; /* Center align items */
     }
+    .profile{
 
     .profile {
         width: 80%;
-        height: auto; 
+        height: 15rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        height: auto; /* Change height to auto for responsiveness */
         margin-left: 0; /* Remove left margin */
         margin-right: 0; /* Remove right margin */
         margin-bottom: 1rem; /* Add bottom margin for spacing */
         margin-top: 1rem; /* Add top margin for spacing */
     }
+    h4{
+        margin-right:2rem;
+        margin-left:2rem;
 
-
+    h4 {
+        margin-right: 2rem;
+        margin-left: 2rem;
+        text-align: center; /* Center align text */
+    }
 
     .pg img {
         width: 6rem; /* Keep the image size */
@@ -161,4 +191,3 @@ h4 {
         margin-bottom: 1rem; /* Add bottom margin for spacing */
     }
 }
-
