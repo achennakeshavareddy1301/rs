@@ -1,193 +1,102 @@
-body{
-    margin:0px;
-    background-color:#232323;
-    display: block;
-}  
-.aboutme{
-    width:70rem;
-    height:15rem;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
-    margin-left: 14rem;
-    margin-right: 14rem;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
+/* Global Styles */
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
 }
-.a{
-    margin-top: 3rem;
-}
-.image1 img{
-    width:10rem;
-    height:10rem;
-    border-radius: 50%;
-    margin-top: 3rem;
-    margin-right: 3rem;
-    margin-bottom: 3rem;
-}
-.name p{
-    color: #fff;
-    font-weight: 800;
-    display: flex;
-}
-.d p{
-    color: #c7c4c4;
-    font-weight:200;
-}
-.about p{
-    color: #fff;
-    font-weight:500;
-}
-.skills p{
-    color: #fff;
-    font-weight:500;
-}
-.f{
-    border-radius: 50%;
-    height: 3rem;
-    width: 3rem;
-}
-.profiles{
-    width:70rem;
-    height:15rem;
-.profiles {
-    width: 70rem;
-    height: 15rem;
-    margin-top: 1rem;
-    margin-bottom: 5rem;
-    margin-left: 14rem;
-@@ -59,17 +59,19 @@ body{
-    flex-direction: row;
-    align-items: flex-start;
-}
-h4{
 
-h4 {
-    color: #fff;
-    font-weight: 600;
-    margin-left: 14rem;
-    margin-right: 14rem;
+/* Navigation */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
 }
-.profile{
-    background-color:rgba(0, 0, 0, 0.568);
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-brand img {
+  margin-right: 10px;
+}
+
+/* About Me */
+.aboutme {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 80px;
+  margin-bottom: 40px;
+}
+
+.image1 img {
+  max-width: 200px;
+  border-radius: 50%;
+  margin-right: 30px;
+}
+
+.a {
+  flex-grow: 1;
+}
+
+.name, .d, .about, .skills {
+  margin-bottom: 20px;
+}
+
+.skills ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.skills li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+/* Profiles and Projects */
+h4 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.profiles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 30px;
+  justify-items: center;
+}
 
 .profile {
-    background-color: rgba(0, 0, 0, 0.568);
-    box-sizing: border-box;
-    border-style:hidden;
-    width:15rem;
-    border-style: hidden;
-    width: 15rem;
-    height: 15rem;
-    border-radius: 0.5rem;
-    padding: 1rem;
-@@ -80,7 +82,8 @@ h4{
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s;
+  text-align: center;
 }
-.pg img{
 
 .pg img {
-    width: 6rem;
-    height: 6rem;
-    justify-content: center;
-@@ -90,7 +93,8 @@ h4{
-    margin-right: 1rem;
-    margin-bottom: 0.5rem;
+  max-width: 100px;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 10px;
 }
-.plink p{
-
-.plink p {
-    font-weight: 600;
-    color: #fff;
-    justify-content: center;
-@@ -99,50 +103,62 @@ h4{
-    margin-right: 1rem;
-    margin-bottom: 1rem;
-}
-.plink button{
 
 .plink button {
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    border-radius: 5px;
-    transition: transform 0.3s;
-
-}
-.plink button:hover{
-
-.plink button:hover {
-    background-color: rgb(189, 214, 214);
-    transform: scale(1.10);
-
-
-}
-.profile:hover{
-    transform: scale(1.05);
-
-.profile:hover {
-    transform: scale(1.05);
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
-@media only screen and (max-width: 767px) {
-    .aboutme{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        height:30rem;
-        margin-right:2rem;
-        margin-left:2rem;
-    }
-}
-@media only screen and (max-width: 767px) {
-    .profiles{
-        width: 100%;
-        margin-right:2rem;
-        margin-left:2rem;
-    .profiles {
-        width: auto; /* Change width to auto for responsiveness */
-        margin-right: 2rem;
-        margin-left: 2rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center; /* Center align items */
-    }
-    .profile{
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .aboutme {
+    flex-direction: column;
+    text-align: center;
+  }
 
-    .profile {
-        width: 80%;
-        height: 15rem;
-        margin-left: 1rem;
-        margin-right: 1rem;
-        height: auto; /* Change height to auto for responsiveness */
-        margin-left: 0; /* Remove left margin */
-        margin-right: 0; /* Remove right margin */
-        margin-bottom: 1rem; /* Add bottom margin for spacing */
-        margin-top: 1rem; /* Add top margin for spacing */
-    }
-    h4{
-        margin-right:2rem;
-        margin-left:2rem;
-
-    h4 {
-        margin-right: 2rem;
-        margin-left: 2rem;
-        text-align: center; /* Center align text */
-    }
-
-    .pg img {
-        width: 6rem; /* Keep the image size */
-        height: 6rem; /* Keep the image size */
-        margin-bottom: 0.5rem; /* Adjust spacing */
-        margin-left: auto; /* Center align image */
-        margin-right: auto; /* Center align image */
-    }
-
-    .plink p {
-        text-align: center; /* Center align text */
-        margin-left: auto; /* Center align text */
-        margin-right: auto; /* Center align text */
-        margin-bottom: 1rem; /* Add bottom margin for spacing */
-    }
+  .image1 img {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
 }
